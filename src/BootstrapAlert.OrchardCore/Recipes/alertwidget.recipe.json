@@ -1,7 +1,7 @@
 {
-    "name": "BootstrapAlert",
-    "displayName": "Bootstrap Alert",
-    "description": "Adds a Bootstrap Alert Widget Content Type.",
+    "name": "AlertWidget",
+    "displayName": "Alert Widget",
+    "description": "Adds a widget to display a Bootstrap Alert.",
     "author": "David Hayden",
     "website": "https://www.davidhayden.me",
     "version": "2.0",
