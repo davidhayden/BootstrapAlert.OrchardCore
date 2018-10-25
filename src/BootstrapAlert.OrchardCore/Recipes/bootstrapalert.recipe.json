@@ -1,0 +1,111 @@
+{
+    "name": "BootstrapAlert",
+    "displayName": "Bootstrap Alert",
+    "description": "Adds a Bootstrap Alert Widget Content Type.",
+    "author": "David Hayden",
+    "website": "https://www.davidhayden.me",
+    "version": "2.0",
+    "issetuprecipe": false,
+    "categories": [
+        "default"
+    ],
+    "tags": [
+        "Bootstrap"
+    ],
+    "variables": {
+        "now": "[js: new Date().toISOString()]"
+    },
+    "steps": [
+        {
+            "name": "ContentDefinition",
+            "ContentTypes": [
+                {
+                    "Name": "Alert",
+                    "DisplayName": "Alert",
+                    "Settings": {
+                        "Creatable": "False",
+                        "Draftable": "True",
+                        "Versionable": "True",
+                        "Listable": "False",
+                        "Securable": "True",
+                        "Stereotype": "Widget"
+                    },
+                    "ContentTypePartDefinitionRecords": [
+                        {
+                            "PartName": "Alert",
+                            "Name": "Alert",
+                            "Settings": {
+                                "Position": "0"
+                            }
+                        },
+                        {
+                            "PartName": "HtmlBodyPart",
+                            "Name": "HtmlBodyPart",
+                            "Settings": {
+                                "Position": "1"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "ContentParts": [
+                {
+                    "Name": "Alert",
+                    "Settings": {},
+                    "ContentPartFieldDefinitionRecords": [
+                        {
+                            "FieldName": "TextField",
+                            "Name": "Type",
+                            "Settings": {
+                                "DisplayName": "Type",
+                                "Editor": "PredefinedList",
+                                "Hint": null,
+                                "Required": true,
+                                "TextFieldPredefinedListEditorSettings": {
+                                    "Options": [
+                                        {
+                                            "name": "Success",
+                                            "value": "success"
+                                        },
+                                        {
+                                            "name": "Warning",
+                                            "value": "warning"
+                                        },
+                                        {
+                                            "name": "Danger",
+                                            "value": "danger"
+                                        },
+                                        {
+                                            "name": "Info",
+                                            "value": "info"
+                                        }
+                                    ],
+                                    "Editor": 1,
+                                    "DefaultValue": "success"
+                                },
+                                "ContentIndexSettings": {
+                                    "Included": false,
+                                    "Stored": false,
+                                    "Analyzed": false,
+                                    "Sanitized": false,
+                                    "Tokenized": false,
+                                    "Template": null
+                                },
+                                "Position": "0"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+          "name": "Templates",
+          "Templates": {
+            "Widget__Alert": {
+              "Content": "[file:text('Snippets/Widget-Alert.liquid')]",
+              "Description": "Liquid template that displays the alert widget."
+            }
+          }
+        }
+    ]
+}
