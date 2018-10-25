@@ -2,6 +2,10 @@
 
 Bootstrap Alert is an Orchard Core CMS Module that adds a recipe to your Orchard Core CMS Website. When run, the recipe creates an Alert Widget and corresponding template to display a Bootstrap Alert.
 
+## Current Status
+
+[![Build status](https://ci.appveyor.com/api/projects/status/btwxkpt2ihgg8mnt?svg=true)](https://ci.appveyor.com/project/davidhayden/bootstrapalert-orchardcore) [![Status](https://img.shields.io/myget/davidhayden-ci/v/BootstrapAlert.OrchardCore.svg)](https://www.myget.org/feed/davidhayden-ci/package/nuget/BootstrapAlert.OrchardCore)
+
 ## Getting Started
 
 The module expects Bootstrap to be used by the Orchard Core CMS website. The module does not come with Bootstrap CSS and JS. Make sure your theme includes the necessary assets for the Alert to look and work properly.
