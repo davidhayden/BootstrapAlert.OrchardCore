@@ -54,6 +54,12 @@ If you prefer to use <em>Markdown</em> instead of <em>HTML</em>, you can replace
 
 ![MarkdownBody Part Settings](https://github.com/davidhayden/BootstrapAlert.OrchardCore/blob/master/assets/markdownbodypart.png?raw=true)
 
+```html
+<div class="alert alert-{{ Model.ContentItem.Content.Alert.Type.Text }}" role="alert">
+  {{ Model.Content.MarkdownBodyPart | shape_render }}
+</div>
+```
+
 The <em>Type</em> of alert is specified by choosing an option from the <em>Type</em> drop down list. The list comes preconfigued with the following types: <i>Success</i>, <i>Info</i>, <i>Warning</i>, and <i>Danger</i>. The list uses the Predefined List Editor. You can add additional types by editing the <em>Type</em> field and the list of options.
 
 ## Road map
