@@ -52,6 +52,8 @@ The [HTML Body Part](https://orchardcore.readthedocs.io/en/latest/OrchardCore.Mo
 
 If you prefer to use <em>Markdown</em> instead of <em>HTML</em>, you can replace the <em>HTML Body Part</em> with the <em>Markdown Body Part</em>. If you do choose <em>Markdown</em>, you will also need to change the template.
 
+![MarkdownBody Part Settings](https://github.com/davidhayden/BootstrapAlert.OrchardCore/blob/master/assets/markdownbodypart.png?raw=true)
+
 The <em>Type</em> of alert is specified by choosing an option from the <em>Type</em> drop down list. The list comes preconfigued with the following types: <i>Success</i>, <i>Info</i>, <i>Warning</i>, and <i>Danger</i>. The list uses the Predefined List Editor. You can add additional types by editing the <em>Type</em> field and the list of options.
 
 ## Road map
