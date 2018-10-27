@@ -40,6 +40,12 @@ For more information on the the Bootstrap Alert Component, visit the [Bootstrap 
 
 The Alert Widget produces the suggested HTML mentioned in the Bootstrap documentation and allows one to create an alert with no knowledge of HTML. You can, however, customize the HTML by modifying the liquid template that comes with the module, <em>Widget__Alert</em>. You can modify the template from the dashboard under <i>Configuration</i> -> <i>Templates</i>. See the Orchard Core Documentation for more information on [Templates](https://orchardcore.readthedocs.io/en/latest/OrchardCore.Modules/OrchardCore.Templates/README/).
 
+```html
+<div class="alert alert-{{ Model.ContentItem.Content.Alert.Type.Text }}" role="alert">
+  {{ Model.Content.HtmlBodyPart | shape_render }}
+</div>
+```
+
 The [HTML Body Part](https://orchardcore.readthedocs.io/en/latest/OrchardCore.Modules/OrchardCore.Html/README/) used to input the body of the alert uses the <em>Standard</em> HTML Editor. You can change the editor to use a <em>Wysiwyg</em> editor. If you prefer to use <em>Markdown</em> instead of <em>HTML</em>, you can replace the <em>HTML Body Part</em> with the <em>Markdown Body Part</em>. If you do choose <em>Markdown</em>, you will also need to change the template.
 
 The <em>Type</em> of alert is specified by choosing an option from the <em>Type</em> drop down list. The list comes preconfigued with the following types: <i>Success</i>, <i>Info</i>, <i>Warning</i>, and <i>Danger</i>. The list uses the Predefined List Editor. You can add additional types by editing the <em>Type</em> field and the list of options.
