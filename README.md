@@ -46,7 +46,11 @@ The Alert Widget produces the suggested HTML mentioned in the Bootstrap document
 </div>
 ```
 
-The [HTML Body Part](https://orchardcore.readthedocs.io/en/latest/OrchardCore.Modules/OrchardCore.Html/README/) used to input the body of the alert uses the <em>Standard</em> HTML Editor. You can change the editor to use a <em>Wysiwyg</em> editor. If you prefer to use <em>Markdown</em> instead of <em>HTML</em>, you can replace the <em>HTML Body Part</em> with the <em>Markdown Body Part</em>. If you do choose <em>Markdown</em>, you will also need to change the template.
+The [HTML Body Part](https://orchardcore.readthedocs.io/en/latest/OrchardCore.Modules/OrchardCore.Html/README/) used to input the body of the alert uses the <em>Standard</em> HTML Editor. You can change the editor to use a <em>Wysiwyg</em> editor.
+
+![HtmlBody Part Settings](https://github.com/davidhayden/BootstrapAlert.OrchardCore/blob/master/assets/htmlbodypart-settings.png?raw=true)
+
+If you prefer to use <em>Markdown</em> instead of <em>HTML</em>, you can replace the <em>HTML Body Part</em> with the <em>Markdown Body Part</em>. If you do choose <em>Markdown</em>, you will also need to change the template.
 
 The <em>Type</em> of alert is specified by choosing an option from the <em>Type</em> drop down list. The list comes preconfigued with the following types: <i>Success</i>, <i>Info</i>, <i>Warning</i>, and <i>Danger</i>. The list uses the Predefined List Editor. You can add additional types by editing the <em>Type</em> field and the list of options.
 
