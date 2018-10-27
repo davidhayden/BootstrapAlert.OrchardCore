@@ -62,6 +62,8 @@ If you prefer to use <em>Markdown</em> instead of <em>HTML</em>, you can replace
 
 The <em>Type</em> of alert is specified by choosing an option from the <em>Type</em> drop down list. The list comes preconfigued with the following types: <i>Success</i>, <i>Info</i>, <i>Warning</i>, and <i>Danger</i>. The list uses the Predefined List Editor. You can add additional types by editing the <em>Type</em> field and the list of options.
 
+![Predefined List Editor Options](https://github.com/davidhayden/BootstrapAlert.OrchardCore/blob/master/assets/predefined-list-editor.png?raw=true)
+
 ## Road map
 
 There are no plans to add any additional features at this time.
