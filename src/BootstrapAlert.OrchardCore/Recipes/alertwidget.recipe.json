@@ -93,6 +93,26 @@
                                 },
                                 "Position": "0"
                             }
+                        },
+                        {
+                            "FieldName": "BooleanField",
+                            "Name": "Dismissible",
+                            "Settings": {
+                              "DisplayName": "Dismissible",
+                              "Editor": null,
+                              "DisplayMode": null,
+                              "Hint": null,
+                              "Label": "Dismissible",
+                              "ContentIndexSettings": {
+                                "Included": false,
+                                "Stored": false,
+                                "Analyzed": false,
+                                "Sanitized": false,
+                                "Tokenized": false,
+                                "Template": null
+                              },
+                              "Position": "1"
+                            }
                         }
                     ]
                 }

@@ -1,3 +1,15 @@
-<div class="alert alert-{{ Model.ContentItem.Content.Alert.Type.Text }}" role="alert">
+{% assign dismissible = Model.ContentItem.Content.Alert.Dismissible.Value %}
+{% assign classes = "alert alert-" + Model.ContentItem.Content.Alert.Type.Text %}
+
+{% if dismissible %}
+{% assign classes = classes + " alert-dismissible fade show" %}
+{% endif %}
+
+<div class="{{ classes }}" role="alert">
   {{ Model.Content.HtmlBodyPart | shape_render }}
+  {% if dismissible %}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  {% endif %}
 </div>
