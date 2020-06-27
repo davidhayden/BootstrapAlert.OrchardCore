@@ -6,7 +6,7 @@
         <Description>Adds a recipe that creates a Bootstrap Alert widget for Orchard Core CMS Website.</Description>
         <PackageTags>Alert;Bootstrap;OrchardCore</PackageTags>
         <VersionPrefix>1.0.0</VersionPrefix>
-        <VersionSuffix>beta3</VersionSuffix>
+        <VersionSuffix>rc2</VersionSuffix>
     </PropertyGroup>
 
     <!-- Called after so that the <VersionSuffix> is built after the local ones -->

@@ -4,7 +4,7 @@
     "description": "Adds a widget to display a Bootstrap Alert.",
     "author": "David Hayden",
     "website": "https://www.davidhayden.me",
-    "version": "2.0",
+    "version": "1.0.0-rc2",
     "issetuprecipe": false,
     "categories": [
         "default"
@@ -23,26 +23,32 @@
                     "Name": "Alert",
                     "DisplayName": "Alert",
                     "Settings": {
-                        "Creatable": "False",
-                        "Draftable": "True",
-                        "Versionable": "True",
-                        "Listable": "False",
-                        "Securable": "True",
-                        "Stereotype": "Widget"
+                        "ContentTypeSettings": {
+                            "Creatable": "False",
+                            "Draftable": "True",
+                            "Versionable": "True",
+                            "Listable": "False",
+                            "Securable": "True",
+                            "Stereotype": "Widget"
+                        }
                     },
                     "ContentTypePartDefinitionRecords": [
                         {
                             "PartName": "Alert",
                             "Name": "Alert",
                             "Settings": {
-                                "Position": "0"
+                                "ContentTypePartSettings": {
+                                    "Position": "0"
+                                }
                             }
                         },
                         {
                             "PartName": "HtmlBodyPart",
                             "Name": "HtmlBodyPart",
                             "Settings": {
-                                "Position": "1"
+                                "ContentTypePartSettings": {
+                                    "Position": "1"
+                                }
                             }
                         }
                     ]
@@ -57,10 +63,14 @@
                             "FieldName": "TextField",
                             "Name": "Type",
                             "Settings": {
-                                "DisplayName": "Type",
-                                "Editor": "PredefinedList",
-                                "Hint": null,
-                                "Required": true,
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Type",
+                                    "Editor": "PredefinedList",
+                                    "Position": "0"
+                                },
+                                "TextFieldSettings": {
+                                    "Required": true
+                                },
                                 "TextFieldPredefinedListEditorSettings": {
                                     "Options": [
                                         {
@@ -88,30 +98,28 @@
                                     "Stored": false,
                                     "Analyzed": false,
                                     "Sanitized": false,
-                                    "Tokenized": false,
-                                    "Template": null
-                                },
-                                "Position": "0"
+                                    "Tokenized": false
+                                }
                             }
                         },
                         {
                             "FieldName": "BooleanField",
                             "Name": "Dismissible",
                             "Settings": {
-                              "DisplayName": "Dismissible",
-                              "Editor": null,
-                              "DisplayMode": null,
-                              "Hint": null,
-                              "Label": "Dismissible",
-                              "ContentIndexSettings": {
-                                "Included": false,
-                                "Stored": false,
-                                "Analyzed": false,
-                                "Sanitized": false,
-                                "Tokenized": false,
-                                "Template": null
-                              },
-                              "Position": "1"
+                                "ContentPartFieldSettings": {
+                                    "DisplayName": "Dismissible",
+                                    "Position": "1"
+                                },
+                                "BooleanFieldSettings": {
+                                    "Label": "Dismissible"
+                                },
+                                "ContentIndexSettings": {
+                                    "Included": false,
+                                    "Stored": false,
+                                    "Analyzed": false,
+                                    "Sanitized": false,
+                                    "Tokenized": false
+                                }
                             }
                         }
                     ]
@@ -119,13 +127,13 @@
             ]
         },
         {
-          "name": "Templates",
-          "Templates": {
-            "Widget__Alert": {
-              "Content": "[file:text('Snippets/Widget-Alert.liquid')]",
-              "Description": "Liquid template that displays the alert widget."
+            "name": "Templates",
+            "Templates": {
+                "Widget__Alert": {
+                    "Content": "[file:text('Snippets/Widget-Alert.liquid')]",
+                    "Description": "Liquid template that displays the alert widget."
+                }
             }
-          }
         }
     ]
 }
